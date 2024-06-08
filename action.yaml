@@ -1,4 +1,4 @@
-name: "{GitHub username}'s Action in Action"
+name: "dAgriq's Action in Action"
 description: 'Greets someone and returns always 42.'
 inputs:
   who-to-greet: # id of input
@@ -10,6 +10,7 @@ outputs:
   description: 'The answer to everything (always 42)'
 runs:
   using: 'docker'
-  image: 'Dockerfile'args:
+  image: 'Dockerfile'
+  args:
      - ${{ inputs.who-to-greet }}
   
